@@ -1,2 +1,4 @@
+faiss-gpu==1.6.4
 pyserini==0.21.0
+torch==2.0.1
 transformers==4.29.2
