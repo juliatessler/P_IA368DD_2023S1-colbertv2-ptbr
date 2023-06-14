@@ -27,7 +27,7 @@ You may not be able to run most of this code without a CUDA device.
 
 ### Generating triples with distillation
 
-You'll need a BM25 index. This can be achieved by following the steps from [mMARCO](https://github.com/unicamp-dl/mMARCO#bm25-baseline-for-portuguese). If you follow the same paths to save data, you can simply run:
+You'll need a BM25 index. This can be achieved by following the steps from [mMARCO](https://github.com/unicamp-dl/mMARCO#bm25-baseline-for-portuguese). You'll also need the `portuguese_queries.train.tsv` file. If you follow the same paths to save data, you can simply run:
 
 ```
 python generate_dataset.py
