@@ -32,3 +32,28 @@ You'll need a BM25 index. This can be achieved by following the steps from [mMAR
 ```
 python generate_dataset.py
 ```
+
+### Training the checkpoint
+
+To train a new checkpoint of the model, you'll need to clone the [original ColBERT repo](https://github.com/stanford-futuredata/ColBERT), since we use much of the original code. Run:
+
+```
+python train.py
+```
+
+### Indexing the collection
+
+For this step, you need a trained checkpoint. This step also depends on the [original ColBERT repo](https://github.com/stanford-futuredata/ColBERT). Change the needed information on the `indexing.py` script and run:
+
+```
+python indexing.py
+```
+
+### Retrieval
+
+
+For this step, you need a trained checkpoint and an indexed collection. This step also depends on the [original ColBERT repo](https://github.com/stanford-futuredata/ColBERT). Change the needed information on the `retrieval.py` script and run:
+
+```
+python retrieval.py
+```
